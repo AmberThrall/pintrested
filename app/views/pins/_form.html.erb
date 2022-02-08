@@ -12,17 +12,17 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div class="form-gruop">
     <%= form.label :image %>
     <%= form.file_field :image, class: "form-control" %>
   </div>
 
+  <div class="form-group">
+    <%= form.label :description %>
+    <%= form.text_area :description, class: "form-control", rows: 5 %>
+  </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit", class: "btn btn-primary" %>
   </div>
+  <br />
 <% end %>
